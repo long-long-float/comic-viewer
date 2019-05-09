@@ -2,6 +2,8 @@
 
 <ul>
   <li *ngFor="let book of books">
-    <a routerLink="/view/{{book.id}}">{{ book.name }}</a>
+    <a routerLink="/view/{{book.id}}">
+      <img src="{{book.getThumbURL()}}" height="400"/>
+    </a>
   </li>
 </ul>

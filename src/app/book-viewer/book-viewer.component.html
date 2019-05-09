@@ -1,1 +1,5 @@
-contents of {{ book.name }}
+<ul>
+    <li *ngFor="let page of book.pages; index as i">
+        <img src="{{ book.getPageURL(i) }}" />
+    </li>
+</ul>
